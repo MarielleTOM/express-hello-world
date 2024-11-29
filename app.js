@@ -32,8 +32,9 @@ app.get("/pokemons", (req, res) => {
     "Raticate",
     "Primeape",
     "Muk"
-  ]
-})
+  ];
+  res,express.json({pokemons})
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
